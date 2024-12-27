@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #000000;
+}
+
+header {
+    background: linear-gradient(90deg, #4b79a1, #000000);
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.slider, .car-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.view-all-button {
+    display: inline-block;
+    margin-top: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Цвет фона страницы */
+}
+
+header {
+    background-color: #000000; /* Темный фон для шапки */
+    color: white; /* Цвет текста */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #000000; /* Цвет заголовков */
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам обтекать */
+    justify-content: space-between;
+}
+
+.car-card {
+    background: white; /* Фоновый цвет карточки */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.908); /* Тень под карточкой */
+    margin: 15px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавные переходы */
+    position: relative; /* Относительное позиционирование для псевдоэлементов */
+}
+
+.car-card:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2); /* Увеличенная тень при наведении */
+}
+
+.car-card::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 10px;
+    background: rgba(33, 34, 37, 0.512); /* Светлый эффект вокруг карточки */
+    z-index: -1; /* Помещает эффект за карточкой */
+    transition: opacity 0.3s; /* Плавный переход */
+}
+
+.car-card:hover::before {
+    opacity: 1; /* Эффект видим при наведении */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Темный фон для подвала */
+    color: white; /* Цвет текста */
+    position: relative; /* Относительное позиционирование */
+}
+/* Основной стиль для заголовков */
+h2, h3 {
+    color: #ffffff; /* Цвет заголовков по умолчанию */
+}
+
+/* Стиль для заголовка обычных автомобилей */
+h3.ordinary {
+    color: #007BFF; /* Синий цвет для обычных автомобилей */
+    font-weight: bold; /* Полужирный шрифт */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    border-bottom: 2px solid #007BFF; /* Подчеркивание */
+    padding-bottom: 5px; /* Отступ снизу */
+}
+
+/* Стиль для заголовка премиум автомобилей */
+h3.premium {
+    color: #FFD700; /* Золотой цвет для премиум автомобилей */
+    font-weight: bold; /* Полужирный шрифт */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    border-bottom: 2px solid #FFD700; /* Подчеркивание */
+    padding-bottom: 5px; /* Отступ снизу */
+}
+
+/* Стиль для заголовка суперкаров */
+h3.supercar {
+    color: #FF4500; /* Оранжевый цвет для суперкаров */
+    font-weight: bold; /* Полужирный шрифт */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    border-bottom: 2px solid #FF4500; /* Подчеркивание */
+    padding-bottom: 5px; /* Отступ снизу */
+}
+/* Общие стили для body */
+body {
+    font-family: 'Roboto', sans-serif; /* Используем Roboto как основной шрифт */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Цвет фона страницы */
+}
+
+/* Стиль для заголовка "О нас" */
+.about-content h2 {
+    color: #333; /* Цвет заголовка */
+    font-family: 'Montserrat', sans-serif; /* Используем Montserrat для заголовка */
+    font-weight: 700; /* Жирный шрифт */
+    font-size: 2em; /* Размер шрифта заголовка */
+}
+
+/* Остальные стили остаются без изменений */
+body {
+    background-image: url('31445.jpg'); /* Путь к изображению фона */
+    background-size: cover; /* Заполнение всего экрана изображением */
+    background-position: center; /* Центрирование изображения */
+}
+/* Стиль для раздела "Контакты" */
+#contact {
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: auto; /* Высота блока автоматически подстраивается под содержимое */
+    padding: 40px; /* Внутренние отступы */
+}
+
+/* Стиль для контента "Контакты" */
+.contact-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для блока */
+    padding: 40px;
+    border-radius: 15px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+    opacity: 0; /* Начальная непрозрачность для анимации */
+    transform: scale(0.9); /* Начальное уменьшение для эффекта */
+    animation: fadeInContact 1s forwards; /* Анимация появления */
+}
+
+/* Анимация появления для раздела "Контакты" */
+@keyframes fadeInContact {
+    0% {
+        opacity: 0; /* Начальная непрозрачность */
+        transform: scale(0.9); /* Начальное уменьшение */
+    }
+    100% {
+        opacity: 1; /* Полная непрозрачность */
+        transform: scale(1); /* Возвращение в исходное положение */
+    }
+}
+
+/* Стиль для заголовка "Контакты" */
+.contact-content h2 {
+    color: #333; /* Цвет заголовка */
+    font-family: 'Montserrat', sans-serif; /* Используем Montserrat для заголовка */
+    font-weight: 700; /* Жирный шрифт */
+    font-size: 2.5em; /* Размер шрифта заголовка */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стиль для текста "Контакты" */
+.contact-content p {
+    color: #555; /* Цвет текста */
+    line-height: 1.6; /* Интервал между строками */
+    font-size: 1.1em; /* Размер шрифта текста */
+}
+
+/* Стиль для списка часов работы */
+.contact-content ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+/* Стиль для социальных ссылок */
+.social-links {
+    display: flex; /* Используем flexbox для горизонтального расположения */
+    gap: 15px; /* Промежуток между элементами */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+.social-links a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #007BFF; /* Цвет ссылок */
+    transition: color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Цвет ссылок при наведении */
+}
+
+
+/* Стиль для раздела "О нас" */
+#about {
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* Занимаем всю высоту экрана */
+}
+
+/* Стиль для контента "О нас" */
+.about-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для блока */
+    padding: 40px;
+    border-radius: 15px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Увеличенная тень для глубины */
+    opacity: 0; /* Начальная непрозрачность для анимации */
+    transform: scale(0.9); /* Начальное уменьшение для эффекта */
+    animation: fadeInAbout 1s forwards; /* Анимация появления */
+}
+
+/* Анимация появления для раздела "О нас" */
+@keyframes fadeInAbout {
+    0% {
+        opacity: 0; /* Начальная непрозрачность */
+        transform: scale(0.9); /* Начальное уменьшение */
+    }
+    100% {
+        opacity: 1; /* Полная непрозрачность */
+        transform: scale(1); /* Возвращение в исходное положение */
+    }
+}
+
+/* Стиль для заголовка "О нас" */
+.about-content h2 {
+    color: #333; /* Цвет заголовка */
+    font-family: 'Montserrat', sans-serif; /* Используем Montserrat для заголовка */
+    font-weight: 700; /* Жирный шрифт */
+    font-size: 2.5em; /* Размер шрифта заголовка */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стиль для текста "О нас" */
+.about-content p {
+    color: #555; /* Цвет текста */
+    line-height: 1.6; /* Интервал между строками */
+    font-size: 1.1em; /* Размер шрифта текста */
+}
+/* Стиль для кнопки "Посмотреть все автомобили" */
+.view-all-button {
+    display: inline-block; /* Делаем элемент блочным для управления размерами */
+    padding: 15px 30px; /* Внутренние отступы */
+    font-size: 1.2em; /* Размер шрифта */
+    color: #fff; /* Цвет текста */
+    background-color: #007BFF; /* Цвет фона */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+/* Эффект при наведении на кнопку */
+.view-all-button:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Увеличение размера при наведении */
+}
+/* Стиль для раздела "Премиум автомобили" */
+#premium-cars {
+    background-color: #f8f9fa; /* Светлый фон для раздела */
+    padding: 40px 20px; /* Внутренние отступы */
+}
+
+/* Стиль для заголовка "Премиум автомобили" */
+#premium-cars h2 {
+    text-align: center; /* Центрирование заголовка */
+    color: #333; /* Цвет заголовка */
+    font-family: 'Montserrat', sans-serif; /* Шрифт для заголовка */
+    font-weight: 700; /* Жирный шрифт */
+    font-size: 2.5em; /* Размер шрифта заголовка */
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
+/* Общий стиль для списка автомобилей */
+.car-list {
+    display: flex; /* Используем flexbox для расположения карточек */
+    justify-content: space-around; /* Равномерное распределение карточек */
+    flex-wrap: wrap; /* Перенос карточек на новую строку */
+}
+
+/* Стиль для карточек автомобилей */
+.car-card {
+    background-color: #fff; /* Белый фон карточки */
+    border-radius: 15px; /* Закругленные углы */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    margin: 15px; /* Отступы между карточками */
+    padding: 20px; /* Внутренние отступы */
+    width: 300px; /* Фиксированная ширина карточки */
+    transition: transform 0.3s; /* Плавный переход для эффекта */
+}
+
+/* Эффект при наведении на карточку автомобиля */
+.car-card:hover {
+    transform: translateY(-5px); /* Поднимаем карточку при наведении */
+}
+
+/* Стиль для заголовков автомобилей */
+.car-card h3 {
+    font-family: 'Montserrat', sans-serif; /* Шрифт для названий автомобилей */
+    color: #333; /* Цвет текста */
+    font-size: 1.5em; /* Размер шрифта */
+    margin: 10px 0; /* Отступы сверху и снизу */
+}
+
+/* Стиль для списков характеристик автомобилей */
+.car-card ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+.car-card li {
+    color: #555; /* Цвет текста */
+    margin-bottom: 8px; /* Отступ снизу для элементов списка */
+}
